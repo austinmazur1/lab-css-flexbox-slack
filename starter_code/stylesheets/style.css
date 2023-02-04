@@ -8,3 +8,28 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+    width: 767px;
+    max-width: 768px;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-list {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+    justify-content: space-around;
+}
+
+@media (min-width:766px) {
+    #nav-list {
+        display: none;
+    }
+}
