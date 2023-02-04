@@ -10,10 +10,20 @@ footer links grey: #454245
 */
 
 body {
-    width: 767px;
-    max-width: 768px;
+    /* width: 767px; */
+    /* max-width: 100%vw; */
     padding: 0;
     margin: 0;
+}
+
+nav,
+header {
+    background-color: #540B51;
+}
+
+#logo {
+    height: 30%;
+    width: 30%;
 }
 
 #nav-list {
@@ -23,13 +33,30 @@ body {
 
 .nav-container {
     display: flex;
+    width: 803px;
     align-items: center;
-    border: 1px solid green;
-    justify-content: space-around;
+    border: 1px solid orange;
+    justify-content: space-between;
+    padding: 40px;
 }
 
-@media (min-width:766px) {
+.search-menu {
+    display: flex;
+    /* border: 1px solid white; */
+    width: 12%;
+    justify-content: space-between;
+}
+
+.search-menu>button {
+    border: none;
+    background-color: #540B51;
+    border: 2px solid green;
+
+}
+
+@media (max-width:768px) {
     #nav-list {
         display: none;
+        width: 100%;
     }
 }
