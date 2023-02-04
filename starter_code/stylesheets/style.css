@@ -16,6 +16,8 @@ body {
     margin: 0;
 }
 
+/* Below starts the nav section */
+
 nav,
 header {
     background-color: #540B51;
@@ -33,9 +35,9 @@ header {
 
 .nav-container {
     display: flex;
-    width: 803px;
+    width: 805px;
     align-items: center;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     justify-content: space-between;
     padding: 40px;
 }
@@ -50,9 +52,95 @@ header {
 .search-menu>button {
     border: none;
     background-color: #540B51;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 
 }
+
+/* Start of header section */
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    width: 885px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 65px;
+    color: white;
+    text-align: center;
+    width: 10em;
+}
+
+.header-body>p {
+    color: white;
+    text-align: center;
+}
+
+#yellow {
+    color: #ECB12F;
+    font-weight: 300;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    /* border: 1px solid yellow; */
+    justify-content: space-between;
+}
+
+#email {
+    background-color: white;
+    border: none;
+    padding: 15px 32px;
+    width: 100%;
+    border-radius: 2px;
+    font-size: 25px;
+    color: #540B51;
+    height: 45%;
+}
+
+#google {
+    background-color: #4285F4;
+    color: white;
+    /* text-align: center; */
+    border: none;
+    padding: 15px 32px;
+    width: 100%;
+    border-radius: 2px;
+    font-size: 25px;
+    height: 45%;
+
+}
+
+#google>span {
+    text-align: center;
+}
+
+#google>img {
+
+    background-color: white;
+    height: 60px;
+
+
+    /* float: left; */
+}
+
+#header-img {
+    width: 100%;
+    padding-top: 4%;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width:768px) {
     #nav-list {
