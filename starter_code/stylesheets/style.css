@@ -24,6 +24,21 @@ header {
   background-color: #540b51;
 }
 
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  color: #ecb12f;
+}
+a:active {
+  text-decoration: none;
+}
+
+
 #logo {
   height: 30%;
   width: 30%;
@@ -51,6 +66,10 @@ got rid of width and it shrunk down */
   /* border: 1px solid white; */
   width: 12%;
   justify-content: space-between;
+}
+
+#sign-in-for-free {
+  display: none;
 }
 
 .search-menu > button {
@@ -267,14 +286,47 @@ h1 {
   #nav-list {
     display: flex;
     justify-content: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100%;
-
   }
-  .nav-container {
-    flex-direction: row;
-    justify-content: space-around;
 
-    border: 1px solid yellow;
+  #search-icon {
+    display: none;
+  }
+
+  .search-menu {
+    justify-content: space-evenly;
+    width: 20%;
+    /* border: 1px solid green; */
+    }
+
+  #sign-in-for-free {
+    display: flex;
+    flex-direction: row;
+    width: 100%
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid red; */
+    font-size: 10px;
+  }
+
+  #free-button {
+    color: #540B51;
+    background-color: white;
+    border-radius: 1px;
+    width: 30;
+  }
+  
+
+  #sign-in-for-free > li {
+  font-size: 10px;
+  align-self: center;
+  /* border: 2px solid gray; */
+ }
+  
+  .nav-container {
+    justify-content: space-between;
+    /* border: 1px solid yellow; */
   }
 }
